@@ -1,0 +1,9 @@
+record_id,plate_number,plate_color,vehicle_type
+v_demo_001,DEMO0001,blue,passenger_car
+v_demo_002,DEMO0002,blue,passenger_car
+v_demo_003,DEMO0003,yellow,truck
+v_demo_004,DEMO0004,blue,passenger_car
+v_demo_005,DEMO0005,yellow,truck
+v_demo_006,DEMO0006,blue,passenger_car
+v_demo_007,DEMO0007,yellow,green_fresh_truck
+v_demo_008,DEMO0008,yellow,truck

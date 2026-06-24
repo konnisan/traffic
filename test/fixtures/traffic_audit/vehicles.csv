@@ -1,0 +1,6 @@
+record_id,plate_number,plate_color,vehicle_type
+v1,鄂A10001,蓝,小型客车
+v2,鄂A10002,蓝,小型客车
+v3,鄂A10003,黄,货车
+v4,鄂A10004,蓝,小型客车
+v5,鄂A10005,蓝,小型客车

@@ -1,0 +1,54 @@
+{
+  "description": "Frontend import demo cases. Create one case at a time, then upload the three CSV files in this folder.",
+  "shared_time_window": {
+    "started_at": "2026-01-02T07:50:00",
+    "ended_at": "2026-01-02T09:10:00"
+  },
+  "datasets": {
+    "vehicles": "vehicles.csv",
+    "transactions": "transactions.csv",
+    "passages": "passages.csv"
+  },
+  "cases": [
+    {
+      "title": "DEMO0001 normal passage",
+      "plate_number": "DEMO0001",
+      "expected_anomalies": []
+    },
+    {
+      "title": "DEMO0002 missing entry",
+      "plate_number": "DEMO0002",
+      "expected_anomalies": ["missing_endpoint"]
+    },
+    {
+      "title": "DEMO0003 missing exit",
+      "plate_number": "DEMO0003",
+      "expected_anomalies": ["missing_endpoint"]
+    },
+    {
+      "title": "DEMO0004 time conflict",
+      "plate_number": "DEMO0004",
+      "expected_anomalies": ["time_conflict"]
+    },
+    {
+      "title": "DEMO0005 route discontinuity",
+      "plate_number": "DEMO0005",
+      "expected_anomalies": ["route_discontinuity"]
+    },
+    {
+      "title": "DEMO0006 fee mismatch",
+      "plate_number": "DEMO0006",
+      "expected_anomalies": ["fee_mismatch"]
+    },
+    {
+      "title": "DEMO0007 green channel normal",
+      "plate_number": "DEMO0007",
+      "expected_anomalies": []
+    },
+    {
+      "title": "DEMO0008 combined anomalies",
+      "plate_number": "DEMO0008",
+      "expected_anomalies": ["missing_endpoint", "route_discontinuity", "fee_mismatch"]
+    }
+  ]
+}

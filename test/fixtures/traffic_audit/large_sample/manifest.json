@@ -1,0 +1,1943 @@
+{
+  "dataset": "traffic_audit_large_sample",
+  "generated_at": "2026-06-23T00:00:00",
+  "description": "Deterministic anonymized traffic audit acceptance dataset. Business records are synthetic and must not enter RAG or graph extraction.",
+  "counts": {
+    "vehicles": 180,
+    "transactions": 180,
+    "passages": 670,
+    "cases": 180
+  },
+  "scenarios": {
+    "normal": 35,
+    "missing_entry": 25,
+    "missing_exit": 20,
+    "time_conflict": 25,
+    "route_discontinuity": 25,
+    "fee_mismatch": 25,
+    "combined_anomalies": 15,
+    "green_review": 10
+  },
+  "cases": [
+    {
+      "plate_number": "TEST00001",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T06:58:00",
+      "window_end": "2026-01-02T08:18:00"
+    },
+    {
+      "plate_number": "TEST00002",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T07:01:00",
+      "window_end": "2026-01-02T08:21:00"
+    },
+    {
+      "plate_number": "TEST00003",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T07:04:00",
+      "window_end": "2026-01-02T08:24:00"
+    },
+    {
+      "plate_number": "TEST00004",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T07:07:00",
+      "window_end": "2026-01-02T08:27:00"
+    },
+    {
+      "plate_number": "TEST00005",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T07:10:00",
+      "window_end": "2026-01-02T08:30:00"
+    },
+    {
+      "plate_number": "TEST00006",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T07:13:00",
+      "window_end": "2026-01-02T08:33:00"
+    },
+    {
+      "plate_number": "TEST00007",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T07:16:00",
+      "window_end": "2026-01-02T08:36:00"
+    },
+    {
+      "plate_number": "TEST00008",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T07:19:00",
+      "window_end": "2026-01-02T08:39:00"
+    },
+    {
+      "plate_number": "TEST00009",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T07:22:00",
+      "window_end": "2026-01-02T08:42:00"
+    },
+    {
+      "plate_number": "TEST00010",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T07:25:00",
+      "window_end": "2026-01-02T08:45:00"
+    },
+    {
+      "plate_number": "TEST00011",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T07:28:00",
+      "window_end": "2026-01-02T08:48:00"
+    },
+    {
+      "plate_number": "TEST00012",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T07:31:00",
+      "window_end": "2026-01-02T08:51:00"
+    },
+    {
+      "plate_number": "TEST00013",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T07:34:00",
+      "window_end": "2026-01-02T08:54:00"
+    },
+    {
+      "plate_number": "TEST00014",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T07:37:00",
+      "window_end": "2026-01-02T08:57:00"
+    },
+    {
+      "plate_number": "TEST00015",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T07:40:00",
+      "window_end": "2026-01-02T09:00:00"
+    },
+    {
+      "plate_number": "TEST00016",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T07:43:00",
+      "window_end": "2026-01-02T09:03:00"
+    },
+    {
+      "plate_number": "TEST00017",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T07:46:00",
+      "window_end": "2026-01-02T09:06:00"
+    },
+    {
+      "plate_number": "TEST00018",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T07:49:00",
+      "window_end": "2026-01-02T09:09:00"
+    },
+    {
+      "plate_number": "TEST00019",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T07:52:00",
+      "window_end": "2026-01-02T09:12:00"
+    },
+    {
+      "plate_number": "TEST00020",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T07:55:00",
+      "window_end": "2026-01-02T09:15:00"
+    },
+    {
+      "plate_number": "TEST00021",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T07:58:00",
+      "window_end": "2026-01-02T09:18:00"
+    },
+    {
+      "plate_number": "TEST00022",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T08:01:00",
+      "window_end": "2026-01-02T09:21:00"
+    },
+    {
+      "plate_number": "TEST00023",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T08:04:00",
+      "window_end": "2026-01-02T09:24:00"
+    },
+    {
+      "plate_number": "TEST00024",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T08:07:00",
+      "window_end": "2026-01-02T09:27:00"
+    },
+    {
+      "plate_number": "TEST00025",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T08:10:00",
+      "window_end": "2026-01-02T09:30:00"
+    },
+    {
+      "plate_number": "TEST00026",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T08:13:00",
+      "window_end": "2026-01-02T09:33:00"
+    },
+    {
+      "plate_number": "TEST00027",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T08:16:00",
+      "window_end": "2026-01-02T09:36:00"
+    },
+    {
+      "plate_number": "TEST00028",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T08:19:00",
+      "window_end": "2026-01-02T09:39:00"
+    },
+    {
+      "plate_number": "TEST00029",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T08:22:00",
+      "window_end": "2026-01-02T09:42:00"
+    },
+    {
+      "plate_number": "TEST00030",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T08:25:00",
+      "window_end": "2026-01-02T09:45:00"
+    },
+    {
+      "plate_number": "TEST00031",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T08:28:00",
+      "window_end": "2026-01-02T09:48:00"
+    },
+    {
+      "plate_number": "TEST00032",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T08:31:00",
+      "window_end": "2026-01-02T09:51:00"
+    },
+    {
+      "plate_number": "TEST00033",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T08:34:00",
+      "window_end": "2026-01-02T09:54:00"
+    },
+    {
+      "plate_number": "TEST00034",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T08:37:00",
+      "window_end": "2026-01-02T09:57:00"
+    },
+    {
+      "plate_number": "TEST00035",
+      "scenario": "normal",
+      "expected_anomalies": [],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T08:40:00",
+      "window_end": "2026-01-02T10:00:00"
+    },
+    {
+      "plate_number": "TEST00036",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T08:43:00",
+      "window_end": "2026-01-02T10:03:00"
+    },
+    {
+      "plate_number": "TEST00037",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T08:46:00",
+      "window_end": "2026-01-02T10:06:00"
+    },
+    {
+      "plate_number": "TEST00038",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T08:49:00",
+      "window_end": "2026-01-02T10:09:00"
+    },
+    {
+      "plate_number": "TEST00039",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T08:52:00",
+      "window_end": "2026-01-02T10:12:00"
+    },
+    {
+      "plate_number": "TEST00040",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T08:55:00",
+      "window_end": "2026-01-02T10:15:00"
+    },
+    {
+      "plate_number": "TEST00041",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T08:58:00",
+      "window_end": "2026-01-02T10:18:00"
+    },
+    {
+      "plate_number": "TEST00042",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T09:01:00",
+      "window_end": "2026-01-02T10:21:00"
+    },
+    {
+      "plate_number": "TEST00043",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T09:04:00",
+      "window_end": "2026-01-02T10:24:00"
+    },
+    {
+      "plate_number": "TEST00044",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T09:07:00",
+      "window_end": "2026-01-02T10:27:00"
+    },
+    {
+      "plate_number": "TEST00045",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T09:10:00",
+      "window_end": "2026-01-02T10:30:00"
+    },
+    {
+      "plate_number": "TEST00046",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T09:13:00",
+      "window_end": "2026-01-02T10:33:00"
+    },
+    {
+      "plate_number": "TEST00047",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T09:16:00",
+      "window_end": "2026-01-02T10:36:00"
+    },
+    {
+      "plate_number": "TEST00048",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T09:19:00",
+      "window_end": "2026-01-02T10:39:00"
+    },
+    {
+      "plate_number": "TEST00049",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T09:22:00",
+      "window_end": "2026-01-02T10:42:00"
+    },
+    {
+      "plate_number": "TEST00050",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T09:25:00",
+      "window_end": "2026-01-02T10:45:00"
+    },
+    {
+      "plate_number": "TEST00051",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T09:28:00",
+      "window_end": "2026-01-02T10:48:00"
+    },
+    {
+      "plate_number": "TEST00052",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T09:31:00",
+      "window_end": "2026-01-02T10:51:00"
+    },
+    {
+      "plate_number": "TEST00053",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T09:34:00",
+      "window_end": "2026-01-02T10:54:00"
+    },
+    {
+      "plate_number": "TEST00054",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T09:37:00",
+      "window_end": "2026-01-02T10:57:00"
+    },
+    {
+      "plate_number": "TEST00055",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T09:40:00",
+      "window_end": "2026-01-02T11:00:00"
+    },
+    {
+      "plate_number": "TEST00056",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T09:43:00",
+      "window_end": "2026-01-02T11:03:00"
+    },
+    {
+      "plate_number": "TEST00057",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T09:46:00",
+      "window_end": "2026-01-02T11:06:00"
+    },
+    {
+      "plate_number": "TEST00058",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T09:49:00",
+      "window_end": "2026-01-02T11:09:00"
+    },
+    {
+      "plate_number": "TEST00059",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T09:52:00",
+      "window_end": "2026-01-02T11:12:00"
+    },
+    {
+      "plate_number": "TEST00060",
+      "scenario": "missing_entry",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T09:55:00",
+      "window_end": "2026-01-02T11:15:00"
+    },
+    {
+      "plate_number": "TEST00061",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T09:58:00",
+      "window_end": "2026-01-02T11:18:00"
+    },
+    {
+      "plate_number": "TEST00062",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T10:01:00",
+      "window_end": "2026-01-02T11:21:00"
+    },
+    {
+      "plate_number": "TEST00063",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T10:04:00",
+      "window_end": "2026-01-02T11:24:00"
+    },
+    {
+      "plate_number": "TEST00064",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T10:07:00",
+      "window_end": "2026-01-02T11:27:00"
+    },
+    {
+      "plate_number": "TEST00065",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T10:10:00",
+      "window_end": "2026-01-02T11:30:00"
+    },
+    {
+      "plate_number": "TEST00066",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T10:13:00",
+      "window_end": "2026-01-02T11:33:00"
+    },
+    {
+      "plate_number": "TEST00067",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T10:16:00",
+      "window_end": "2026-01-02T11:36:00"
+    },
+    {
+      "plate_number": "TEST00068",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T10:19:00",
+      "window_end": "2026-01-02T11:39:00"
+    },
+    {
+      "plate_number": "TEST00069",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T10:22:00",
+      "window_end": "2026-01-02T11:42:00"
+    },
+    {
+      "plate_number": "TEST00070",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T10:25:00",
+      "window_end": "2026-01-02T11:45:00"
+    },
+    {
+      "plate_number": "TEST00071",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T10:28:00",
+      "window_end": "2026-01-02T11:48:00"
+    },
+    {
+      "plate_number": "TEST00072",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T10:31:00",
+      "window_end": "2026-01-02T11:51:00"
+    },
+    {
+      "plate_number": "TEST00073",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T10:34:00",
+      "window_end": "2026-01-02T11:54:00"
+    },
+    {
+      "plate_number": "TEST00074",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T10:37:00",
+      "window_end": "2026-01-02T11:57:00"
+    },
+    {
+      "plate_number": "TEST00075",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T10:40:00",
+      "window_end": "2026-01-02T12:00:00"
+    },
+    {
+      "plate_number": "TEST00076",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T10:43:00",
+      "window_end": "2026-01-02T12:03:00"
+    },
+    {
+      "plate_number": "TEST00077",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T10:46:00",
+      "window_end": "2026-01-02T12:06:00"
+    },
+    {
+      "plate_number": "TEST00078",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T10:49:00",
+      "window_end": "2026-01-02T12:09:00"
+    },
+    {
+      "plate_number": "TEST00079",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T10:52:00",
+      "window_end": "2026-01-02T12:12:00"
+    },
+    {
+      "plate_number": "TEST00080",
+      "scenario": "missing_exit",
+      "expected_anomalies": [
+        "missing_endpoint"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T10:55:00",
+      "window_end": "2026-01-02T12:15:00"
+    },
+    {
+      "plate_number": "TEST00081",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T10:58:00",
+      "window_end": "2026-01-02T12:18:00"
+    },
+    {
+      "plate_number": "TEST00082",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T11:01:00",
+      "window_end": "2026-01-02T12:21:00"
+    },
+    {
+      "plate_number": "TEST00083",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T11:04:00",
+      "window_end": "2026-01-02T12:24:00"
+    },
+    {
+      "plate_number": "TEST00084",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T11:07:00",
+      "window_end": "2026-01-02T12:27:00"
+    },
+    {
+      "plate_number": "TEST00085",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T11:10:00",
+      "window_end": "2026-01-02T12:30:00"
+    },
+    {
+      "plate_number": "TEST00086",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T11:13:00",
+      "window_end": "2026-01-02T12:33:00"
+    },
+    {
+      "plate_number": "TEST00087",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T11:16:00",
+      "window_end": "2026-01-02T12:36:00"
+    },
+    {
+      "plate_number": "TEST00088",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T11:19:00",
+      "window_end": "2026-01-02T12:39:00"
+    },
+    {
+      "plate_number": "TEST00089",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T11:22:00",
+      "window_end": "2026-01-02T12:42:00"
+    },
+    {
+      "plate_number": "TEST00090",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T11:25:00",
+      "window_end": "2026-01-02T12:45:00"
+    },
+    {
+      "plate_number": "TEST00091",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T11:28:00",
+      "window_end": "2026-01-02T12:48:00"
+    },
+    {
+      "plate_number": "TEST00092",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T11:31:00",
+      "window_end": "2026-01-02T12:51:00"
+    },
+    {
+      "plate_number": "TEST00093",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T11:34:00",
+      "window_end": "2026-01-02T12:54:00"
+    },
+    {
+      "plate_number": "TEST00094",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T11:37:00",
+      "window_end": "2026-01-02T12:57:00"
+    },
+    {
+      "plate_number": "TEST00095",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T11:40:00",
+      "window_end": "2026-01-02T13:00:00"
+    },
+    {
+      "plate_number": "TEST00096",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T11:43:00",
+      "window_end": "2026-01-02T13:03:00"
+    },
+    {
+      "plate_number": "TEST00097",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T11:46:00",
+      "window_end": "2026-01-02T13:06:00"
+    },
+    {
+      "plate_number": "TEST00098",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T11:49:00",
+      "window_end": "2026-01-02T13:09:00"
+    },
+    {
+      "plate_number": "TEST00099",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T11:52:00",
+      "window_end": "2026-01-02T13:12:00"
+    },
+    {
+      "plate_number": "TEST00100",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T11:55:00",
+      "window_end": "2026-01-02T13:15:00"
+    },
+    {
+      "plate_number": "TEST00101",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T11:58:00",
+      "window_end": "2026-01-02T13:18:00"
+    },
+    {
+      "plate_number": "TEST00102",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T12:01:00",
+      "window_end": "2026-01-02T13:21:00"
+    },
+    {
+      "plate_number": "TEST00103",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T12:04:00",
+      "window_end": "2026-01-02T13:24:00"
+    },
+    {
+      "plate_number": "TEST00104",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T12:07:00",
+      "window_end": "2026-01-02T13:27:00"
+    },
+    {
+      "plate_number": "TEST00105",
+      "scenario": "time_conflict",
+      "expected_anomalies": [
+        "time_conflict"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T12:10:00",
+      "window_end": "2026-01-02T13:30:00"
+    },
+    {
+      "plate_number": "TEST00106",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T12:13:00",
+      "window_end": "2026-01-02T13:33:00"
+    },
+    {
+      "plate_number": "TEST00107",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T12:16:00",
+      "window_end": "2026-01-02T13:36:00"
+    },
+    {
+      "plate_number": "TEST00108",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T12:19:00",
+      "window_end": "2026-01-02T13:39:00"
+    },
+    {
+      "plate_number": "TEST00109",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T12:22:00",
+      "window_end": "2026-01-02T13:42:00"
+    },
+    {
+      "plate_number": "TEST00110",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T12:25:00",
+      "window_end": "2026-01-02T13:45:00"
+    },
+    {
+      "plate_number": "TEST00111",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T12:28:00",
+      "window_end": "2026-01-02T13:48:00"
+    },
+    {
+      "plate_number": "TEST00112",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T12:31:00",
+      "window_end": "2026-01-02T13:51:00"
+    },
+    {
+      "plate_number": "TEST00113",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T12:34:00",
+      "window_end": "2026-01-02T13:54:00"
+    },
+    {
+      "plate_number": "TEST00114",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T12:37:00",
+      "window_end": "2026-01-02T13:57:00"
+    },
+    {
+      "plate_number": "TEST00115",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T12:40:00",
+      "window_end": "2026-01-02T14:00:00"
+    },
+    {
+      "plate_number": "TEST00116",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T12:43:00",
+      "window_end": "2026-01-02T14:03:00"
+    },
+    {
+      "plate_number": "TEST00117",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T12:46:00",
+      "window_end": "2026-01-02T14:06:00"
+    },
+    {
+      "plate_number": "TEST00118",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T12:49:00",
+      "window_end": "2026-01-02T14:09:00"
+    },
+    {
+      "plate_number": "TEST00119",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T12:52:00",
+      "window_end": "2026-01-02T14:12:00"
+    },
+    {
+      "plate_number": "TEST00120",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T12:55:00",
+      "window_end": "2026-01-02T14:15:00"
+    },
+    {
+      "plate_number": "TEST00121",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T12:58:00",
+      "window_end": "2026-01-02T14:18:00"
+    },
+    {
+      "plate_number": "TEST00122",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T13:01:00",
+      "window_end": "2026-01-02T14:21:00"
+    },
+    {
+      "plate_number": "TEST00123",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T13:04:00",
+      "window_end": "2026-01-02T14:24:00"
+    },
+    {
+      "plate_number": "TEST00124",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T13:07:00",
+      "window_end": "2026-01-02T14:27:00"
+    },
+    {
+      "plate_number": "TEST00125",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T13:10:00",
+      "window_end": "2026-01-02T14:30:00"
+    },
+    {
+      "plate_number": "TEST00126",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T13:13:00",
+      "window_end": "2026-01-02T14:33:00"
+    },
+    {
+      "plate_number": "TEST00127",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T13:16:00",
+      "window_end": "2026-01-02T14:36:00"
+    },
+    {
+      "plate_number": "TEST00128",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T13:19:00",
+      "window_end": "2026-01-02T14:39:00"
+    },
+    {
+      "plate_number": "TEST00129",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T13:22:00",
+      "window_end": "2026-01-02T14:42:00"
+    },
+    {
+      "plate_number": "TEST00130",
+      "scenario": "route_discontinuity",
+      "expected_anomalies": [
+        "route_discontinuity"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T13:25:00",
+      "window_end": "2026-01-02T14:45:00"
+    },
+    {
+      "plate_number": "TEST00131",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T13:28:00",
+      "window_end": "2026-01-02T14:48:00"
+    },
+    {
+      "plate_number": "TEST00132",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T13:31:00",
+      "window_end": "2026-01-02T14:51:00"
+    },
+    {
+      "plate_number": "TEST00133",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T13:34:00",
+      "window_end": "2026-01-02T14:54:00"
+    },
+    {
+      "plate_number": "TEST00134",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T13:37:00",
+      "window_end": "2026-01-02T14:57:00"
+    },
+    {
+      "plate_number": "TEST00135",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T13:40:00",
+      "window_end": "2026-01-02T15:00:00"
+    },
+    {
+      "plate_number": "TEST00136",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T13:43:00",
+      "window_end": "2026-01-02T15:03:00"
+    },
+    {
+      "plate_number": "TEST00137",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T13:46:00",
+      "window_end": "2026-01-02T15:06:00"
+    },
+    {
+      "plate_number": "TEST00138",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T13:49:00",
+      "window_end": "2026-01-02T15:09:00"
+    },
+    {
+      "plate_number": "TEST00139",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T13:52:00",
+      "window_end": "2026-01-02T15:12:00"
+    },
+    {
+      "plate_number": "TEST00140",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T13:55:00",
+      "window_end": "2026-01-02T15:15:00"
+    },
+    {
+      "plate_number": "TEST00141",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T13:58:00",
+      "window_end": "2026-01-02T15:18:00"
+    },
+    {
+      "plate_number": "TEST00142",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T14:01:00",
+      "window_end": "2026-01-02T15:21:00"
+    },
+    {
+      "plate_number": "TEST00143",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T14:04:00",
+      "window_end": "2026-01-02T15:24:00"
+    },
+    {
+      "plate_number": "TEST00144",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T14:07:00",
+      "window_end": "2026-01-02T15:27:00"
+    },
+    {
+      "plate_number": "TEST00145",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T14:10:00",
+      "window_end": "2026-01-02T15:30:00"
+    },
+    {
+      "plate_number": "TEST00146",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T14:13:00",
+      "window_end": "2026-01-02T15:33:00"
+    },
+    {
+      "plate_number": "TEST00147",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T14:16:00",
+      "window_end": "2026-01-02T15:36:00"
+    },
+    {
+      "plate_number": "TEST00148",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T14:19:00",
+      "window_end": "2026-01-02T15:39:00"
+    },
+    {
+      "plate_number": "TEST00149",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T14:22:00",
+      "window_end": "2026-01-02T15:42:00"
+    },
+    {
+      "plate_number": "TEST00150",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T14:25:00",
+      "window_end": "2026-01-02T15:45:00"
+    },
+    {
+      "plate_number": "TEST00151",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T14:28:00",
+      "window_end": "2026-01-02T15:48:00"
+    },
+    {
+      "plate_number": "TEST00152",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T14:31:00",
+      "window_end": "2026-01-02T15:51:00"
+    },
+    {
+      "plate_number": "TEST00153",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T14:34:00",
+      "window_end": "2026-01-02T15:54:00"
+    },
+    {
+      "plate_number": "TEST00154",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T14:37:00",
+      "window_end": "2026-01-02T15:57:00"
+    },
+    {
+      "plate_number": "TEST00155",
+      "scenario": "fee_mismatch",
+      "expected_anomalies": [
+        "fee_mismatch"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T14:40:00",
+      "window_end": "2026-01-02T16:00:00"
+    },
+    {
+      "plate_number": "TEST00156",
+      "scenario": "combined_anomalies",
+      "expected_anomalies": [
+        "missing_endpoint",
+        "route_discontinuity",
+        "fee_mismatch"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T14:43:00",
+      "window_end": "2026-01-02T16:03:00"
+    },
+    {
+      "plate_number": "TEST00157",
+      "scenario": "combined_anomalies",
+      "expected_anomalies": [
+        "missing_endpoint",
+        "route_discontinuity",
+        "fee_mismatch"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T14:46:00",
+      "window_end": "2026-01-02T16:06:00"
+    },
+    {
+      "plate_number": "TEST00158",
+      "scenario": "combined_anomalies",
+      "expected_anomalies": [
+        "missing_endpoint",
+        "route_discontinuity",
+        "fee_mismatch"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T14:49:00",
+      "window_end": "2026-01-02T16:09:00"
+    },
+    {
+      "plate_number": "TEST00159",
+      "scenario": "combined_anomalies",
+      "expected_anomalies": [
+        "missing_endpoint",
+        "route_discontinuity",
+        "fee_mismatch"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T14:52:00",
+      "window_end": "2026-01-02T16:12:00"
+    },
+    {
+      "plate_number": "TEST00160",
+      "scenario": "combined_anomalies",
+      "expected_anomalies": [
+        "missing_endpoint",
+        "route_discontinuity",
+        "fee_mismatch"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T14:55:00",
+      "window_end": "2026-01-02T16:15:00"
+    },
+    {
+      "plate_number": "TEST00161",
+      "scenario": "combined_anomalies",
+      "expected_anomalies": [
+        "missing_endpoint",
+        "route_discontinuity",
+        "fee_mismatch"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T14:58:00",
+      "window_end": "2026-01-02T16:18:00"
+    },
+    {
+      "plate_number": "TEST00162",
+      "scenario": "combined_anomalies",
+      "expected_anomalies": [
+        "missing_endpoint",
+        "route_discontinuity",
+        "fee_mismatch"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T15:01:00",
+      "window_end": "2026-01-02T16:21:00"
+    },
+    {
+      "plate_number": "TEST00163",
+      "scenario": "combined_anomalies",
+      "expected_anomalies": [
+        "missing_endpoint",
+        "route_discontinuity",
+        "fee_mismatch"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T15:04:00",
+      "window_end": "2026-01-02T16:24:00"
+    },
+    {
+      "plate_number": "TEST00164",
+      "scenario": "combined_anomalies",
+      "expected_anomalies": [
+        "missing_endpoint",
+        "route_discontinuity",
+        "fee_mismatch"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T15:07:00",
+      "window_end": "2026-01-02T16:27:00"
+    },
+    {
+      "plate_number": "TEST00165",
+      "scenario": "combined_anomalies",
+      "expected_anomalies": [
+        "missing_endpoint",
+        "route_discontinuity",
+        "fee_mismatch"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T15:10:00",
+      "window_end": "2026-01-02T16:30:00"
+    },
+    {
+      "plate_number": "TEST00166",
+      "scenario": "combined_anomalies",
+      "expected_anomalies": [
+        "missing_endpoint",
+        "route_discontinuity",
+        "fee_mismatch"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T15:13:00",
+      "window_end": "2026-01-02T16:33:00"
+    },
+    {
+      "plate_number": "TEST00167",
+      "scenario": "combined_anomalies",
+      "expected_anomalies": [
+        "missing_endpoint",
+        "route_discontinuity",
+        "fee_mismatch"
+      ],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T15:16:00",
+      "window_end": "2026-01-02T16:36:00"
+    },
+    {
+      "plate_number": "TEST00168",
+      "scenario": "combined_anomalies",
+      "expected_anomalies": [
+        "missing_endpoint",
+        "route_discontinuity",
+        "fee_mismatch"
+      ],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T15:19:00",
+      "window_end": "2026-01-02T16:39:00"
+    },
+    {
+      "plate_number": "TEST00169",
+      "scenario": "combined_anomalies",
+      "expected_anomalies": [
+        "missing_endpoint",
+        "route_discontinuity",
+        "fee_mismatch"
+      ],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T15:22:00",
+      "window_end": "2026-01-02T16:42:00"
+    },
+    {
+      "plate_number": "TEST00170",
+      "scenario": "combined_anomalies",
+      "expected_anomalies": [
+        "missing_endpoint",
+        "route_discontinuity",
+        "fee_mismatch"
+      ],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T15:25:00",
+      "window_end": "2026-01-02T16:45:00"
+    },
+    {
+      "plate_number": "TEST00171",
+      "scenario": "green_review",
+      "expected_anomalies": [],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T15:28:00",
+      "window_end": "2026-01-02T16:48:00"
+    },
+    {
+      "plate_number": "TEST00172",
+      "scenario": "green_review",
+      "expected_anomalies": [],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T15:31:00",
+      "window_end": "2026-01-02T16:51:00"
+    },
+    {
+      "plate_number": "TEST00173",
+      "scenario": "green_review",
+      "expected_anomalies": [],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T15:34:00",
+      "window_end": "2026-01-02T16:54:00"
+    },
+    {
+      "plate_number": "TEST00174",
+      "scenario": "green_review",
+      "expected_anomalies": [],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T15:37:00",
+      "window_end": "2026-01-02T16:57:00"
+    },
+    {
+      "plate_number": "TEST00175",
+      "scenario": "green_review",
+      "expected_anomalies": [],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T15:40:00",
+      "window_end": "2026-01-02T17:00:00"
+    },
+    {
+      "plate_number": "TEST00176",
+      "scenario": "green_review",
+      "expected_anomalies": [],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T15:43:00",
+      "window_end": "2026-01-02T17:03:00"
+    },
+    {
+      "plate_number": "TEST00177",
+      "scenario": "green_review",
+      "expected_anomalies": [],
+      "entry_station": "S02",
+      "exit_station": "S04",
+      "window_start": "2026-01-02T15:46:00",
+      "window_end": "2026-01-02T17:06:00"
+    },
+    {
+      "plate_number": "TEST00178",
+      "scenario": "green_review",
+      "expected_anomalies": [],
+      "entry_station": "S05",
+      "exit_station": "S09",
+      "window_start": "2026-01-02T15:49:00",
+      "window_end": "2026-01-02T17:09:00"
+    },
+    {
+      "plate_number": "TEST00179",
+      "scenario": "green_review",
+      "expected_anomalies": [],
+      "entry_station": "S10",
+      "exit_station": "S12",
+      "window_start": "2026-01-02T15:52:00",
+      "window_end": "2026-01-02T17:12:00"
+    },
+    {
+      "plate_number": "TEST00180",
+      "scenario": "green_review",
+      "expected_anomalies": [],
+      "entry_station": "S01",
+      "exit_station": "S03",
+      "window_start": "2026-01-02T15:55:00",
+      "window_end": "2026-01-02T17:15:00"
+    }
+  ]
+}

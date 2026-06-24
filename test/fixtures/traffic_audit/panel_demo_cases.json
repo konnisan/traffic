@@ -1,0 +1,164 @@
+{
+  "description": "Basic frontend panel demo data for route restore, case analysis, and report generation.",
+  "cases": [
+    {
+      "id": "panel-normal-001",
+      "title": "TEST00001 正常通行样例",
+      "plate_number": "TEST00001",
+      "status": "pending_review",
+      "started_at": "2026-01-02T07:00:00",
+      "ended_at": "2026-01-02T09:00:00",
+      "dataset_summary": {
+        "vehicles": 180,
+        "transactions": 180,
+        "passages": 670
+      },
+      "analysis_result": {
+        "route": [
+          {
+            "record_id": "p00001_1",
+            "event_time": "2026-01-02T07:03:00",
+            "event_type": "entry",
+            "location_code": "S02",
+            "sequence_no": 1,
+            "next_location_code": "G03",
+            "source": {
+              "source_file": "passages.csv",
+              "row_number": 2,
+              "record_id": "p00001_1"
+            }
+          },
+          {
+            "record_id": "p00001_2",
+            "event_time": "2026-01-02T07:23:00",
+            "event_type": "gantry",
+            "location_code": "G03",
+            "sequence_no": 2,
+            "next_location_code": "G04",
+            "source": {
+              "source_file": "passages.csv",
+              "row_number": 3,
+              "record_id": "p00001_2"
+            }
+          },
+          {
+            "record_id": "p00001_3",
+            "event_time": "2026-01-02T07:43:00",
+            "event_type": "gantry",
+            "location_code": "G04",
+            "sequence_no": 3,
+            "next_location_code": "S04",
+            "source": {
+              "source_file": "passages.csv",
+              "row_number": 4,
+              "record_id": "p00001_3"
+            }
+          },
+          {
+            "record_id": "p00001_4",
+            "event_time": "2026-01-02T08:03:00",
+            "event_type": "exit",
+            "location_code": "S04",
+            "sequence_no": 4,
+            "next_location_code": "",
+            "source": {
+              "source_file": "passages.csv",
+              "row_number": 5,
+              "record_id": "p00001_4"
+            }
+          }
+        ],
+        "evidence": [],
+        "risk_summary": "未发现规则异常"
+      },
+      "report_markdown": "# TEST00001 正常通行样例\n\n## 案件概况\n- 辅助研判结论：未发现规则异常\n- 正式结论：未经人工确认"
+    },
+    {
+      "id": "panel-risk-001",
+      "title": "TEST00156 费用异常样例",
+      "plate_number": "TEST00156",
+      "status": "pending_review",
+      "started_at": "2026-01-02T14:30:00",
+      "ended_at": "2026-01-02T16:00:00",
+      "dataset_summary": {
+        "vehicles": 180,
+        "transactions": 180,
+        "passages": 670
+      },
+      "analysis_result": {
+        "route": [
+          {
+            "record_id": "p00156_1",
+            "event_time": "2026-01-02T14:48:00",
+            "event_type": "entry",
+            "location_code": "S01",
+            "sequence_no": 1,
+            "next_location_code": "G01",
+            "source": {
+              "source_file": "passages.csv",
+              "row_number": 579,
+              "record_id": "p00156_1"
+            }
+          },
+          {
+            "record_id": "p00156_2",
+            "event_time": "2026-01-02T15:08:00",
+            "event_type": "gantry",
+            "location_code": "G01",
+            "sequence_no": 2,
+            "next_location_code": "G02",
+            "source": {
+              "source_file": "passages.csv",
+              "row_number": 580,
+              "record_id": "p00156_2"
+            }
+          },
+          {
+            "record_id": "p00156_3",
+            "event_time": "2026-01-02T15:28:00",
+            "event_type": "gantry",
+            "location_code": "G02",
+            "sequence_no": 3,
+            "next_location_code": "S03",
+            "source": {
+              "source_file": "passages.csv",
+              "row_number": 581,
+              "record_id": "p00156_3"
+            }
+          },
+          {
+            "record_id": "p00156_4",
+            "event_time": "2026-01-02T15:48:00",
+            "event_type": "exit",
+            "location_code": "S03",
+            "sequence_no": 4,
+            "next_location_code": "",
+            "source": {
+              "source_file": "passages.csv",
+              "row_number": 582,
+              "record_id": "p00156_4"
+            }
+          }
+        ],
+        "evidence": [
+          {
+            "anomaly_type": "fee_mismatch",
+            "severity": "high",
+            "fact": "实收 18 元，规则应收 30 元，差额 12 元",
+            "rule_basis": "收费交易实收金额应与规则计算金额一致",
+            "confidence_note": "由确定性规则命中，需稽核人员结合业务材料复核",
+            "sources": [
+              {
+                "source_file": "transactions.csv",
+                "row_number": 157,
+                "record_id": "t00156"
+              }
+            ]
+          }
+        ],
+        "risk_summary": "发现疑似异常，等待人工复核"
+      },
+      "report_markdown": "# TEST00156 费用异常样例\n\n## 案件概况\n- 辅助研判结论：发现疑似异常，等待人工复核\n- 正式结论：未经人工确认\n\n## 异常证据\n### 1. fee_mismatch\n- 事实：实收 18 元，规则应收 30 元，差额 12 元"
+    }
+  ]
+}
